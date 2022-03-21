@@ -3,9 +3,9 @@ import React from 'react'
 
 //COMPONENTE CON FUNCION
 
-function Titulo({tituloProps,subtituloProps,samsungProps}) {
+function Titulo({tituloProps,subtituloProps}) {
   //tambien puede ser funtion Titulo (props){}
-  console.log(samsungProps)
+  
 
   return (
 

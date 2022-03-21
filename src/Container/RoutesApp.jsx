@@ -4,11 +4,6 @@ import Titulo from '../components/Titulo/Titulo';
 import ListItem from '../components/ListItem/ListItem'
 
 
-let titulo='soy titulo dinamico' //las variables son estados, solo presentan datos
-
-let subtitulo='subtitulo hola'
-
-
 function RoutesApp() {
 
   return (
@@ -18,10 +13,13 @@ function RoutesApp() {
      
       <NavBar/>
 
-      <Titulo tituloProps={titulo} subtituloProps={subtitulo} /> {/*Extremadamente modular y dinamico porque directamente lo hice una sola vez */}
+      <Titulo 
+        tituloProps='soy titulo de app' 
+        subtituloProps='soy subtitulo de app' 
+      /> {/*Extremadamente modular y dinamico porque directamente lo hice una sola vez */}
       {/*tmb se puede poner como Titulo()*/}
 
-      <ListItem/>
+      <ListItem greeting='List item'/>
     </>
   )
 
