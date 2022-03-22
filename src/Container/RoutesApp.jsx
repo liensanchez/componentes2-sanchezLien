@@ -6,20 +6,24 @@ import ListItem from '../components/ListItem/ListItem'
 
 function RoutesApp() {
 
+  
+
   return (
 
     <>
-
      
       <NavBar/>
 
-      <Titulo 
-        tituloProps='soy titulo de app' 
-        subtituloProps='soy subtitulo de app' 
-      /> {/*Extremadamente modular y dinamico porque directamente lo hice una sola vez */}
-      {/*tmb se puede poner como Titulo()*/}
+      <ListItem greeting='List item' />
 
-      <ListItem greeting='List item'/>
+      <Titulo 
+            tituloProps='titulo'
+            subtituloProps='soy subtitulo de app' 
+      /> {/*Extremadamente modular y dinamico porque directamente lo hice una sola vez */}
+          {/*tmb se puede poner como Titulo()*/}
+
+      
+      
     </>
   )
 
