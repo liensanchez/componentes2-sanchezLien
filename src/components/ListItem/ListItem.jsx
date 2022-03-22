@@ -15,15 +15,17 @@ function ListItem({greeting}) {
 
     //console.log(productos)
 
-
+    //ponemos un limite en la cantidad de produtos
     if (productos==10){
 
+      //sumamos 0 a partir del 10
       setProductos(productos+0)
 
     }else{
 
+      //mientras no lleguemos a 10 nos suma +1
       setProductos(productos+1)
-      
+
     }
 
   } 
